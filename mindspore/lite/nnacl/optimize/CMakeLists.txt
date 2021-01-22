@@ -1,12 +1,17 @@
-project(optimize)
+project(optimize LANGUAGES C ASM)
 
+enable_language(ASM)
 set(NNACL_DIR ${CMAKE_CURRENT_SOURCE_DIR}/..)
+
 include_directories(NNACL_DIR)
 
 ########################### optimized files ###########################
 file(GLOB SDOT_SRC ${NNACL_DIR}/assembly/opt/*.S)
 file(GLOB FP16_C_SRC ${NNACL_DIR}/fp16/*.c)
 file(GLOB FP16_NEON_SRC ${NNACL_DIR}/assembly/fp16/*.S)
+
+set_source_files_properties(SDOT_SRC PROPERTIES COMPILE_FLAGS "-x assembler-with-cpp")
+set_source_files_properties(FP16_NEON_SRC PROPERTIES COMPILE_FLAGS "-x assembler-with-cpp")
 
 set_property(SOURCE ${SDOT_SRC} PROPERTY LANGUAGE C)
 set_property(SOURCE ${FP16_C_SRC} PROPERTY LANGUAGE C)

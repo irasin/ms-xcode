@@ -324,7 +324,7 @@ function(mindspore_add_pkg pkg_name )
             endif ()
 
         elseif (PKG_ONLY_MAKE)
-            __exec_cmd(COMMAND ${CMAKE_MAKE_PROGRAM} ${${pkg_name}_CXXFLAGS} -j${THNUM}
+            __exec_cmd(COMMAND ${CMAKE_MAKE_PROGRAM} ${${pkg_name}_CXXFLAGS} 
                     WORKING_DIRECTORY ${${pkg_name}_SOURCE_DIR})
             set(PKG_INSTALL_INCS ${PKG_ONLY_MAKE_INCS})
             set(PKG_INSTALL_LIBS ${PKG_ONLY_MAKE_LIBS})
@@ -356,7 +356,7 @@ function(mindspore_add_pkg pkg_name )
                     -DCMAKE_INSTALL_PREFIX=${${pkg_name}_BASE_DIR} ${${pkg_name}_SOURCE_DIR}/${PKG_CMAKE_PATH}
                     WORKING_DIRECTORY ${${pkg_name}_SOURCE_DIR}/_build)
 
-            __exec_cmd(COMMAND ${CMAKE_COMMAND} --build . --target install -- -j${THNUM}
+            __exec_cmd(COMMAND ${CMAKE_COMMAND} --build . --target install -- 
                     WORKING_DIRECTORY ${${pkg_name}_SOURCE_DIR}/_build)
 
         else()
@@ -387,7 +387,7 @@ function(mindspore_add_pkg pkg_name )
                         ${${pkg_name}_MAKE_CFLAGS} ${${pkg_name}_MAKE_CXXFLAGS} ${${pkg_name}_MAKE_LDFLAGS})
             endif ()
             # build
-            __exec_cmd(COMMAND ${CMAKE_MAKE_PROGRAM} ${${pkg_name}_BUILD_OPTION} -j${THNUM}
+            __exec_cmd(COMMAND ${CMAKE_MAKE_PROGRAM} ${${pkg_name}_BUILD_OPTION} 
                     WORKING_DIRECTORY ${${pkg_name}_SOURCE_DIR})
 
             if (PKG_INSTALL_INCS OR PKG_INSTALL_LIBS)

@@ -78,6 +78,7 @@ add_subdirectory(runtime/kernel/arm)
 add_library(mindspore-lite SHARED ${LITE_SRC})
 add_dependencies(mindspore-lite fbs_src)
 set_target_properties(mindspore-lite PROPERTIES CLEAN_DIRECT_OUTPUT 1)
+set_target_properties(mindspore-lite PROPERTIES LANGUAGES C CXX ASM)
 
 add_library(mindspore-lite_static STATIC ${LITE_SRC})
 add_dependencies(mindspore-lite_static fbs_src)
@@ -136,3 +137,13 @@ if(PLATFORM_ARM64)
         target_link_libraries(mindspore-lite_static cpu_fp16_kernel_mid nnacl_fp16_mid)
     endif()
 endif()
+
+if(APPLE)
+    set_target_properties(mindspore-lite PROPERTIES FRAMEWORK TRUE)
+    set_target_properties(mindspore-lite PROPERTIES
+        MACOSX_FRAMEWORK_IDENTIFIER com.ira.sin
+        XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY "iPhone Developer"
+    )
+endif()
+
+set_target_properties(mindspore-lite PROPERTIES LANGUAGES C CXX ASM)

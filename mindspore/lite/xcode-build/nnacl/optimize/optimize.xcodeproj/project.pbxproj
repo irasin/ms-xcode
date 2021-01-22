@@ -1,0 +1,1053 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		491703986B3C4472AF7EF843 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FEC074EC577C49F292522909 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				6E7AD334A19F4E4DA7774C28 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		6BD98BB325F04066B7B4C63D /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BE8FBF4FE3B74C748DFE18CB /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				47C5D6DF76B564975277A177 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				E6F5038A301F4CB1B26A3A47 /* PBXTargetDependency */,
+				9B2AA67EC9094BC7AF8DC7BB /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		A66869F3B25F45638F8E7B6B /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = ED5BF3E8ACCD49AAA363F106 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				5EDC7827E06247A8AEAC82C2 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		F41FEEB26A0045E89D3DED41 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7D5E4CC4D5D145439A43C76B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				494D6C1E837616C468464CE5 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		2121C245075C4AE4847B41F5 /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/optimize/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 111DC5AFB1D24F4794F8B60E /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/optimize/CMakeLists.txt */; };
+		2D8A814441AA4AB48079906E /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/assembly/opt/MatmulDpInt8Opt.S */ = {isa = PBXBuildFile; fileRef = AA288BBC5FF14B5696BA7B38 /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/assembly/opt/MatmulDpInt8Opt.S */; };
+		A272114AF1B1474ABCAC1671 /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/assembly/opt/MatmulOptR4Int8.S */ = {isa = PBXBuildFile; fileRef = 47F61ACDFD2E438994D20AE3 /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/assembly/opt/MatmulOptR4Int8.S */; };
+		A55193E614B14056B5EE435F /* /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize/CMakeFiles/nnacl_optimize_mid.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = CD1095B9F27C4C3992480CB3 /* /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize/CMakeFiles/nnacl_optimize_mid.dir/Info.plist */; };
+		C6E9C77A56414502B6C03996 /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/assembly/opt/MatmulDpInt8.S */ = {isa = PBXBuildFile; fileRef = 65411B26A6604CBDA6EB1682 /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/assembly/opt/MatmulDpInt8.S */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		1FD7E3CF694D47A4B05820D3 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		466156661D27494EA978E571 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		99376D8001EE42D9BA6D4698 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		C68D0ED8391C4BF4B3A52DD3 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		05F58C9FAFDB4803BC29F8D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDE70624340C4BB393A0A260 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6623618D0699433E92E79AC9;
+			remoteInfo = nnacl_optimize_mid;
+		};
+		292F83104B8F460695548B4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDE70624340C4BB393A0A260 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BD98BB325F04066B7B4C63D;
+			remoteInfo = ALL_BUILD;
+		};
+		2B80F617533F444BAFC7C0D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDE70624340C4BB393A0A260 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BD98BB325F04066B7B4C63D;
+			remoteInfo = ALL_BUILD;
+		};
+		70EA9BF6EED04E8AAFBBDF99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDE70624340C4BB393A0A260 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F41FEEB26A0045E89D3DED41;
+			remoteInfo = ZERO_CHECK;
+		};
+		D5858E800A2644C6B422357E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDE70624340C4BB393A0A260 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F41FEEB26A0045E89D3DED41;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A270FD375044B3FB0CF5D28 /* nnacl_optimize_mid */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libnnacl_optimize_mid.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		111DC5AFB1D24F4794F8B60E /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/optimize/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		47F61ACDFD2E438994D20AE3 /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/assembly/opt/MatmulOptR4Int8.S */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = MatmulOptR4Int8.S; path = ../assembly/opt/MatmulOptR4Int8.S; sourceTree = SOURCE_ROOT; };
+		65411B26A6604CBDA6EB1682 /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/assembly/opt/MatmulDpInt8.S */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = MatmulDpInt8.S; path = ../assembly/opt/MatmulDpInt8.S; sourceTree = SOURCE_ROOT; };
+		AA288BBC5FF14B5696BA7B38 /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/assembly/opt/MatmulDpInt8Opt.S */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = MatmulDpInt8Opt.S; path = ../assembly/opt/MatmulDpInt8Opt.S; sourceTree = SOURCE_ROOT; };
+		CD1095B9F27C4C3992480CB3 /* /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize/CMakeFiles/nnacl_optimize_mid.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = "../../xcode-build/nnacl/optimize/CMakeFiles/nnacl_optimize_mid.dir/Info.plist"; sourceTree = SOURCE_ROOT; };
+		FEA1B394AD5A4819B8043A5B /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/optimize/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1DFE86A0F3A46DCBC80E39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5307CBD9BFE244D9A2D49F29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58834B1A173F4794A3DFE612 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				C0703A7A80C3439BAEB8A1C2 /* CMake Rules */,
+				FEA1B394AD5A4819B8043A5B /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/optimize/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		5D99A3F80025453398549912 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A270FD375044B3FB0CF5D28 /* nnacl_optimize_mid */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0703A7A80C3439BAEB8A1C2 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		DB092A68896B4BEC82A9D665 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD1095B9F27C4C3992480CB3 /* /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize/CMakeFiles/nnacl_optimize_mid.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DEBE4BB93B8A4B7B9014FF46 /* nnacl_optimize_mid */ = {
+			isa = PBXGroup;
+			children = (
+				DB092A68896B4BEC82A9D665 /* Resources */,
+				65411B26A6604CBDA6EB1682 /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/assembly/opt/MatmulDpInt8.S */,
+				AA288BBC5FF14B5696BA7B38 /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/assembly/opt/MatmulDpInt8Opt.S */,
+				47F61ACDFD2E438994D20AE3 /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/assembly/opt/MatmulOptR4Int8.S */,
+				111DC5AFB1D24F4794F8B60E /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/optimize/CMakeLists.txt */,
+			);
+			name = nnacl_optimize_mid;
+			sourceTree = "<group>";
+		};
+		FE6D5AD698FB46869DD72196 = {
+			isa = PBXGroup;
+			children = (
+				DEBE4BB93B8A4B7B9014FF46 /* nnacl_optimize_mid */,
+				58834B1A173F4794A3DFE612 /* ALL_BUILD */,
+				5D99A3F80025453398549912 /* Products */,
+				5307CBD9BFE244D9A2D49F29 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6623618D0699433E92E79AC9 /* nnacl_optimize_mid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A37BFF7D7E54FC8BCB2B0C2 /* Build configuration list for PBXNativeTarget "nnacl_optimize_mid" */;
+			buildPhases = (
+				BC958B98EC5F456194BA7815 /* Sources */,
+				E1DFE86A0F3A46DCBC80E39A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6131D6BAF3EB46BFB8E2F365 /* PBXTargetDependency */,
+			);
+			name = nnacl_optimize_mid;
+			productName = nnacl_optimize_mid;
+			productReference = 0A270FD375044B3FB0CF5D28 /* nnacl_optimize_mid */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDE70624340C4BB393A0A260 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1230;
+			};
+			buildConfigurationList = A334489B7CCF40ECA75B3247 /* Build configuration list for PBXProject "optimize" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				99376D8001EE42D9BA6D4698 /* Debug */,
+				C68D0ED8391C4BF4B3A52DD3 /* Release */,
+				466156661D27494EA978E571 /* MinSizeRel */,
+				1FD7E3CF694D47A4B05820D3 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = FE6D5AD698FB46869DD72196;
+			projectDirPath = ../../../nnacl/optimize;
+			projectRoot = "";
+			targets = (
+				6BD98BB325F04066B7B4C63D /* ALL_BUILD */,
+				F41FEEB26A0045E89D3DED41 /* ZERO_CHECK */,
+				491703986B3C4472AF7EF843 /* install */,
+				6623618D0699433E92E79AC9 /* nnacl_optimize_mid */,
+				A66869F3B25F45638F8E7B6B /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		47C5D6DF76B564975277A177 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		494D6C1E837616C468464CE5 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize
+  make -f /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize
+  make -f /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize
+  make -f /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize
+  make -f /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build
+  /usr/local/Cellar/cmake/3.19.3/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build
+  /usr/local/Cellar/cmake/3.19.3/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build
+  /usr/local/Cellar/cmake/3.19.3/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build
+  /usr/local/Cellar/cmake/3.19.3/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		661D9C604B3B91332E7543CC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize
+  /usr/local/Cellar/cmake/3.19.3/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize
+  /usr/local/Cellar/cmake/3.19.3/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize
+  /usr/local/Cellar/cmake/3.19.3/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize
+  /usr/local/Cellar/cmake/3.19.3/bin/cmake -DBUILD_TYPE=$CONFIGURATION -DEFFECTIVE_PLATFORM_NAME=$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC958B98EC5F456194BA7815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6E9C77A56414502B6C03996 /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/assembly/opt/MatmulDpInt8.S */,
+				2D8A814441AA4AB48079906E /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/assembly/opt/MatmulDpInt8Opt.S */,
+				A272114AF1B1474ABCAC1671 /* /Users/irasin/desktop/mindspore/mindspore/lite/nnacl/assembly/opt/MatmulOptR4Int8.S */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5EDC7827E06247A8AEAC82C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BD98BB325F04066B7B4C63D /* ALL_BUILD */;
+			targetProxy = 292F83104B8F460695548B4C /* PBXContainerItemProxy */;
+		};
+		6131D6BAF3EB46BFB8E2F365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F41FEEB26A0045E89D3DED41 /* ZERO_CHECK */;
+			targetProxy = 70EA9BF6EED04E8AAFBBDF99 /* PBXContainerItemProxy */;
+		};
+		6E7AD334A19F4E4DA7774C28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BD98BB325F04066B7B4C63D /* ALL_BUILD */;
+			targetProxy = 2B80F617533F444BAFC7C0D9 /* PBXContainerItemProxy */;
+		};
+		9B2AA67EC9094BC7AF8DC7BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F41FEEB26A0045E89D3DED41 /* ZERO_CHECK */;
+			targetProxy = D5858E800A2644C6B422357E /* PBXContainerItemProxy */;
+		};
+		E6F5038A301F4CB1B26A3A47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6623618D0699433E92E79AC9 /* nnacl_optimize_mid */;
+			targetProxy = 05F58C9FAFDB4803BC29F8D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B9BA810ABDE455CADA5CF90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		173CADCF4DF5479EB95F69C4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2CE8E8347838485F80579086 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_BITCODE = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize/build";
+			};
+			name = MinSizeRel;
+		};
+		3A4EA69055784F48B3B0E740 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize/optimize.build/RelWithDebInfo/nnacl_optimize_mid.build/";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",NO_DLIB,ENABLE_ARM,ENABLE_ARM64);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/irasin/desktop/mindspore,/Users/irasin/desktop/mindspore/mindspore/core,/Users/irasin/desktop/mindspore/mindspore/core/ir,/Users/irasin/desktop/mindspore/mindspore/ccsrc,/Users/irasin/desktop/mindspore/mindspore/lite,/Users/irasin/desktop/mindspore/mindspore/lite/src/runtime/kernel/arm,/Users/irasin/desktop/mindspore/third_party,"/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build",/Users/irasin/desktop/mindspore/cmake/../third_party/securec/include,"/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/.mslib/flatbuffers_7396894f1550eeefb9c94ca5a3079f05/include","/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/schema","/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/schema/inner",/Users/irasin/desktop/mindspore/mindspore/lite/nnacl/NNACL_DIR,/Users/irasin/desktop/mindspore/mindspore/lite/nnacl/optimize/NNACL_DIR);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fPIC -fPIE -D_FORTIFY_SOURCE=2     -Wall -Werror -fstack-protector-strong -Wno-attributes     -Wno-deprecated-declarations -Wno-missing-braces  -DMS_VERSION_MAJOR=OFF -DMS_VERSION_MINOR=OFF -DMS_VERSION_REVISION=OFF  -fomit-frame-pointer -fstrict-aliasing -ffunction-sections -fdata-sections -ffast-math -march=armv8.2-a+dotprod+fp16        -DNDEBUG -fPIC ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = nnacl_optimize_mid;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		41B0B01A16244EBC88CC59E9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		42C52CEDA8DA4422B3B75F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		440CC1582EBF4ACEB3CB0DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize/optimize.build/Debug/nnacl_optimize_mid.build/";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",NO_DLIB,ENABLE_ARM,ENABLE_ARM64);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/irasin/desktop/mindspore,/Users/irasin/desktop/mindspore/mindspore/core,/Users/irasin/desktop/mindspore/mindspore/core/ir,/Users/irasin/desktop/mindspore/mindspore/ccsrc,/Users/irasin/desktop/mindspore/mindspore/lite,/Users/irasin/desktop/mindspore/mindspore/lite/src/runtime/kernel/arm,/Users/irasin/desktop/mindspore/third_party,"/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build",/Users/irasin/desktop/mindspore/cmake/../third_party/securec/include,"/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/.mslib/flatbuffers_7396894f1550eeefb9c94ca5a3079f05/include","/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/schema","/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/schema/inner",/Users/irasin/desktop/mindspore/mindspore/lite/nnacl/NNACL_DIR,/Users/irasin/desktop/mindspore/mindspore/lite/nnacl/optimize/NNACL_DIR);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fPIC -fPIE -D_FORTIFY_SOURCE=2     -Wall -Werror -fstack-protector-strong -Wno-attributes     -Wno-deprecated-declarations -Wno-missing-braces  -DMS_VERSION_MAJOR=OFF -DMS_VERSION_MINOR=OFF -DMS_VERSION_REVISION=OFF  -fomit-frame-pointer -fstrict-aliasing -ffunction-sections -fdata-sections -ffast-math -march=armv8.2-a+dotprod+fp16    -fPIC ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = nnacl_optimize_mid;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		51DE054760D043C5A8CC792B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize/optimize.build/Release/nnacl_optimize_mid.build/";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",NO_DLIB,ENABLE_ARM,ENABLE_ARM64);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/irasin/desktop/mindspore,/Users/irasin/desktop/mindspore/mindspore/core,/Users/irasin/desktop/mindspore/mindspore/core/ir,/Users/irasin/desktop/mindspore/mindspore/ccsrc,/Users/irasin/desktop/mindspore/mindspore/lite,/Users/irasin/desktop/mindspore/mindspore/lite/src/runtime/kernel/arm,/Users/irasin/desktop/mindspore/third_party,"/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build",/Users/irasin/desktop/mindspore/cmake/../third_party/securec/include,"/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/.mslib/flatbuffers_7396894f1550eeefb9c94ca5a3079f05/include","/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/schema","/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/schema/inner",/Users/irasin/desktop/mindspore/mindspore/lite/nnacl/NNACL_DIR,/Users/irasin/desktop/mindspore/mindspore/lite/nnacl/optimize/NNACL_DIR);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fPIC -fPIE -D_FORTIFY_SOURCE=2     -Wall -Werror -fstack-protector-strong -Wno-attributes     -Wno-deprecated-declarations -Wno-missing-braces  -DMS_VERSION_MAJOR=OFF -DMS_VERSION_MINOR=OFF -DMS_VERSION_REVISION=OFF  -fomit-frame-pointer -fstrict-aliasing -ffunction-sections -fdata-sections -ffast-math -march=armv8.2-a+dotprod+fp16     -DNDEBUG -fPIC ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = nnacl_optimize_mid;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		562D2FC059184D6892831ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		5AB5C543BC37409F892AF418 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		604AAFF991434265A4D7D9A0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		65D39D3C87454DB5BEB6BD25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		681F6CFE3ED04BF195CAD769 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		72CA6424D86943B9A95653EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_BITCODE = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize/build";
+			};
+			name = Debug;
+		};
+		7D8BDB958C0B46B490F54591 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_BITCODE = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize/build";
+			};
+			name = RelWithDebInfo;
+		};
+		7E3FC25B1FE24FB28B33FE80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		9B13C32FB273477ABC1FC1CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		A063823D8578471CA9A04F62 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A687B9234E994555B98F4EA2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B00E34AA804E4FA7874E1E3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		BC036883DFF24446BFD92605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_BITCODE = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				SDKROOT = iphoneos;
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize/build";
+			};
+			name = Release;
+		};
+		C436A5A5630D426995DC00C8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C479C565B75E4D2FA50ED595 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F1D57A0843774E6098743B19 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize/optimize.build/MinSizeRel/nnacl_optimize_mid.build/";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",NO_DLIB,ENABLE_ARM,ENABLE_ARM64);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/irasin/desktop/mindspore,/Users/irasin/desktop/mindspore/mindspore/core,/Users/irasin/desktop/mindspore/mindspore/core/ir,/Users/irasin/desktop/mindspore/mindspore/ccsrc,/Users/irasin/desktop/mindspore/mindspore/lite,/Users/irasin/desktop/mindspore/mindspore/lite/src/runtime/kernel/arm,/Users/irasin/desktop/mindspore/third_party,"/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build",/Users/irasin/desktop/mindspore/cmake/../third_party/securec/include,"/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/.mslib/flatbuffers_7396894f1550eeefb9c94ca5a3079f05/include","/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/schema","/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/schema/inner",/Users/irasin/desktop/mindspore/mindspore/lite/nnacl/NNACL_DIR,/Users/irasin/desktop/mindspore/mindspore/lite/nnacl/optimize/NNACL_DIR);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fPIC -fPIE -D_FORTIFY_SOURCE=2     -Wall -Werror -fstack-protector-strong -Wno-attributes     -Wno-deprecated-declarations -Wno-missing-braces  -DMS_VERSION_MAJOR=OFF -DMS_VERSION_MINOR=OFF -DMS_VERSION_REVISION=OFF  -fomit-frame-pointer -fstrict-aliasing -ffunction-sections -fdata-sections -ffast-math -march=armv8.2-a+dotprod+fp16     -DNDEBUG -fPIC ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = nnacl_optimize_mid;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/irasin/desktop/mindspore/mindspore/lite/xcode-build/nnacl/optimize";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A37BFF7D7E54FC8BCB2B0C2 /* Build configuration list for PBXNativeTarget "nnacl_optimize_mid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				440CC1582EBF4ACEB3CB0DA4 /* Debug */,
+				51DE054760D043C5A8CC792B /* Release */,
+				F1D57A0843774E6098743B19 /* MinSizeRel */,
+				3A4EA69055784F48B3B0E740 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7D5E4CC4D5D145439A43C76B /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B13C32FB273477ABC1FC1CF /* Debug */,
+				562D2FC059184D6892831ABB /* Release */,
+				41B0B01A16244EBC88CC59E9 /* MinSizeRel */,
+				C436A5A5630D426995DC00C8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A334489B7CCF40ECA75B3247 /* Build configuration list for PBXProject "optimize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72CA6424D86943B9A95653EC /* Debug */,
+				BC036883DFF24446BFD92605 /* Release */,
+				2CE8E8347838485F80579086 /* MinSizeRel */,
+				7D8BDB958C0B46B490F54591 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BE8FBF4FE3B74C748DFE18CB /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C479C565B75E4D2FA50ED595 /* Debug */,
+				7E3FC25B1FE24FB28B33FE80 /* Release */,
+				604AAFF991434265A4D7D9A0 /* MinSizeRel */,
+				A063823D8578471CA9A04F62 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ED5BF3E8ACCD49AAA363F106 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B9BA810ABDE455CADA5CF90 /* Debug */,
+				B00E34AA804E4FA7874E1E3C /* Release */,
+				173CADCF4DF5479EB95F69C4 /* MinSizeRel */,
+				5AB5C543BC37409F892AF418 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FEC074EC577C49F292522909 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42C52CEDA8DA4422B3B75F54 /* Debug */,
+				65D39D3C87454DB5BEB6BD25 /* Release */,
+				A687B9234E994555B98F4EA2 /* MinSizeRel */,
+				681F6CFE3ED04BF195CAD769 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDE70624340C4BB393A0A260 /* Project object */;
+}

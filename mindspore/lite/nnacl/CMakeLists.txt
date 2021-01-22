@@ -28,7 +28,7 @@ endif()
 
 if (PLATFORM_ARM64)
     file(GLOB ASSEMBLY_SRC ${NNACL_DIR}/assembly/arm64/*.S)
-    set_property(SOURCE ${ASSEMBLY_SRC} PROPERTY LANGUAGE C)
+    set_property(SOURCE ${ASSEMBLY_SRC} PROPERTY LANGUAGE C ASM)
 endif()
 
 if (PLATFORM_ARM32)

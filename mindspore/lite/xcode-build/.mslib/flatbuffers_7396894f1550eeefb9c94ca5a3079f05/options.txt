@@ -1,0 +1,3 @@
+12.0.0.12000032-12.0.0.12000032
+            VER1.11.0LIBSflatbuffersEXEflatcURLhttps://github.com/google/flatbuffers/archive/v1.11.0.tar.gzMD502c64880acb89dbd57eebacfd67200d8CMAKE_OPTION-DFLATBUFFERS_BUILD_TESTS=OFF-DCMAKE_INSTALL_LIBDIR=lib - - 
+            -D_FORTIFY_SOURCE=2 -O2---D_FORTIFY_SOURCE=2 -O2--
